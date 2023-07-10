@@ -1,7 +1,19 @@
 
 <!---------- Script ------------>
 
-<script setup>
+<script>
+
+// Import
+import AppHeader from './components/AppHeader.vue'
+
+
+//logic
+
+export default {
+    components: {
+        AppHeader
+    }
+}
 
 </script>
 
@@ -32,7 +44,7 @@
     <!-- Main -->
     <AppMain />
   
-    
+
 
     <!-- Footer -->
     <AppFooter />
@@ -48,7 +60,7 @@
 
 <!-------------- Style ------------>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 // Import
 @use './assets/scss/style.scss'

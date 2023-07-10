@@ -1,7 +1,7 @@
 
 <!---------- Script ------------>
 
-<script setup>
+<script>
 
 </script>
 
@@ -115,8 +115,6 @@
 
 <style lang="scss" scoped>
 
-// Import
-@use './assets/scss/style.scss'
 
 
 </style>

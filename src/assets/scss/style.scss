@@ -13,14 +13,34 @@
 
 
 
-
 /* Generals */
 
 body {
-    font-family: $main-font
+    font-family: $main-font;
+    background-color: $secondary-col;
   }
 
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
 
 
 
   /* Utils */
+
+  .container {
+    width: 1450px;
+    margin: 0 auto;
+  }
+
+
+  .button {
+    color: $secondary-col;
+    background-color: $primary-col;
+    padding: 20px 35px;
+  }
