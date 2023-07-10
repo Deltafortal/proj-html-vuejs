@@ -1,0 +1,26 @@
+// Import
+
+@use './vars' as *;
+
+
+/* Css Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Generals */
+
+body {
+    font-family: $main-font
+  }
+
+
+
+
+  /* Utils */
