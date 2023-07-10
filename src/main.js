@@ -13,5 +13,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* Import Icons */
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
+library.add(faCopyright)
 
-createApp(App).mount('#app')
+
+createApp(App)
+.component('FontAwesomeIcon' , FontAwesomeIcon)
+.mount('#app')
