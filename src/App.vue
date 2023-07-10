@@ -16,8 +16,28 @@
 
 <template>
   
+    <!-- Header -->
+    <AppHeader />
+
+
+
+
+
+    <!-- Jumbotron -->
+    <AppJumbotron />
+
+
+
+
+    <!-- Main -->
+    <AppMain />
   
+
+    <!-- Footer -->
+    <AppFooter />
+    
 </template>
+
 
 
 
