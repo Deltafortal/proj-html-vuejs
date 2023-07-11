@@ -39,13 +39,18 @@
                 
                 
                 <!-- Hamburgher Menu-->
-                <HamburgherMenu />
+                <div class="hamburgher">
+                    <font-awesome-icon :icon="['fas', 'bars-staggered']" />
+                </div>
                 
                 <!-- Events Button-->
 
                 <a href="#" class="event-btn button">
                     
-                    <div>Upcoming Events</div>
+                    <div>
+                        Upcoming Events
+                        <font-awesome-icon :icon="['fas', 'arrow-right']" />
+                    </div>
                     
                 </a>
                 
@@ -106,5 +111,11 @@ a {
     font-size: 21px;
     color: $primary-col;
 }
+
+.hamburgher {
+    font-size: 25px;
+    margin-right: 30px;
+}
+
 
 </style>
