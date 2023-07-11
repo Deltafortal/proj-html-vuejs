@@ -2,8 +2,17 @@
 
 <script>
 
+// Import
+import MainIntro from '../components/MainIntro.vue'
 
 
+
+//logic
+export default {
+    components: {
+        MainIntro
+    }
+}
 
 </script>
 

@@ -6,13 +6,14 @@
 // Import
 import AppHeader from './components/AppHeader.vue'
 import AppJumbotron from './components/AppJumbotron.vue'
+import AppMain from './components/AppMain.vue'
 
 
 //logic
 
 export default {
     components: {
-        AppHeader , AppJumbotron
+        AppHeader , AppJumbotron , AppMain
     }
 }
 
