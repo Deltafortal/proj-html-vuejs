@@ -2,6 +2,20 @@
 
 <script>
 
+// Import
+import  { store } from '../data/store';
+
+export default {
+    data() {
+        return {
+            list: { store, }
+
+        }
+    },
+
+}
+
+
 </script>
 
 
@@ -29,7 +43,7 @@
             <!---- NavBar ----->
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li v-for="option in list.store.navbar" :kei="option.id"><a href="#"> {{ option.text }}</a></li>
                 </ul>
             </nav>
             
@@ -110,6 +124,14 @@ img {
 a {
     font-size: 21px;
     color: $primary-col;
+}
+
+ul {
+    @include flexbox(center, center)
+}
+
+li {
+    margin-right: 27px;
 }
 
 .hamburgher {
