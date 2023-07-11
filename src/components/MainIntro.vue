@@ -93,7 +93,6 @@
 
 .intro {
     background-color: $secondary-col;
-    height: 600px;
 }
 
 
