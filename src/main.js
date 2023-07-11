@@ -14,8 +14,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faCopyright , faArrowRight , faBarsStaggered)
+library.add(faCopyright , faArrowRight , faBarsStaggered, faChevronRight, faChevronLeft)
 
 
 createApp(App)

@@ -30,6 +30,11 @@ a {
 }
 
 
+h2,h4 {
+  color: $secondary-col;
+}
+
+
 
   /* Utils */
 
@@ -41,6 +46,12 @@ a {
 
   .button {
     color: $secondary-col;
+    display: inline-block;
     background-color: $primary-col;
     padding: 20px 35px;
+
+    a {
+      color: $secondary-col;
+      font-weight: 700;
+    }
   }

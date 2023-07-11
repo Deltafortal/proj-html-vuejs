@@ -21,8 +21,8 @@
 
 
         <!-- Left Arrow -->
-        <div class="button">
-
+        <div class="slider button-left">
+            <font-awesome-icon :icon="['fas', 'chevron-left']" />
         </div>
 
         <!-- Content -->
@@ -31,15 +31,17 @@
             <h4>Learn cycling from the pros</h4>
 
             <div class="button">
-                Learn more
-                <img src="" alt="Right Arrow">
+                <a href="#"> 
+                    Learn more
+                    <font-awesome-icon :icon="['fas', 'arrow-right']" />
+                </a>
             </div>
 
         </div>
 
         <!-- Right Arrow-->
-        <div class="button">
-            
+        <div class="slider button-right">
+            <font-awesome-icon :icon="['fas', 'chevron-right']" />
         </div>
 
 
@@ -59,6 +61,50 @@
 
 <style lang="scss" scoped>
 
+//Import
+@use '../assets/scss/mixin' as *;
+@use '../assets/scss/vars' as *;
 
+
+.jumbotron {
+    height: 800px;
+    background-image : url(../assets/img/slider-bike-12.jpg);
+    background-size: cover;
+    @include flexbox(space-between, center);
+}
+
+
+h2 {
+    font-size: 69px;
+    margin-bottom: 13px;
+}
+
+h4 {
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+.slider {
+    color: $secondary-col;
+    background-color: $primary-col;
+    padding: 15px 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button-left {
+    margin-left: 25px;
+}
+
+
+.button-right {
+    margin-right: 25px;
+}
+
+
+.content {
+    flex-basis: 65%;
+}
 
 </style>
