@@ -420,22 +420,26 @@ export const store = reactive({
             {
                 date: '22.06.2022',
                 title: 'Road bike or Mountain bike?',
-                description: 'Compared to similar road bikes with a solid frame structure, [...]'
+                description: 'Compared to similar road bikes with a solid frame structure, [...]',
+                id: 26,
             },
             {
                 date: '22.06.2022',
                 title: 'What is mountain biking called?',
-                description: 'Mountain bike is one of the most popular outdoor sports, [...]'
+                description: 'Mountain bike is one of the most popular outdoor sports, [...]',
+                id: 27,
             },
             {
                 date: '22.06.2022',
                 title: 'How much should you cycle a day?',
-                description: 'In order to get the right benefits from the exercice, [...]'
+                description: 'In order to get the right benefits from the exercice, [...]',
+                id: 28
             },
             {
                 date: '22.06.2022',
                 title: 'How long does it take 5 km by bike',
-                description: 'It takes 5 km and 10 minutes, sir, But at, [...]'
+                description: 'It takes 5 km and 10 minutes, sir, But at, [...]',
+                id: 29
             },
         ]
 
