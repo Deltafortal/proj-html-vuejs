@@ -441,7 +441,14 @@ export const store = reactive({
                 description: 'It takes 5 km and 10 minutes, sir, But at, [...]',
                 id: 29
             },
-        ]
+        ],
+
+        club: {
+            location: 'New Jersei, USA',
+            phone: '+1 (234) 567 89 10',
+            mail: 'aldolucchetta21@gmail.com',
+            id: 30,
+        },
 
 
 })
