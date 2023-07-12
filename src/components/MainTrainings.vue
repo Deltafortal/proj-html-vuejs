@@ -84,15 +84,6 @@ export default {
     text-align: center;
 }
 
-h3 {
-    font-size: 35px;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-
-.title {
-    margin-bottom: 34px;
-}
 
 .wrapper {
     @include flexbox(center, center);

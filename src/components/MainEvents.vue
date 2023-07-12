@@ -117,21 +117,12 @@ export default {
     margin-top: 100px;
 }
 
-.title {
-    text-align: center;
-    margin-top: 100;
-    margin-bottom: 40px;
-}
 .wrapper {
     @include flexbox(center, center);
     flex-wrap: wrap;
 }
 
 
-h3 {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
 
 .card {
     position: relative;

@@ -34,6 +34,9 @@ h2,h4 {
   color: $secondary-col;
 }
 
+h3 {
+  font-size: 30px;
+}
 
 
   /* Utils */
@@ -55,3 +58,14 @@ h2,h4 {
       font-weight: 700;
     }
   }
+
+  .title {
+    text-align: center;
+    margin-top: 100;
+    margin-bottom: 40px;
+
+    h3 {
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+}
