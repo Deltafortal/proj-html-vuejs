@@ -12,12 +12,6 @@ export default {
 
         }
     },
-    methods: {
-        imgUrl(training) {
-            const url = new URL (`../assets/img/${training}.jpg`, import.meta.url);
-            return url.href
-        }
-    }
 }
 
 </script>
@@ -49,7 +43,7 @@ export default {
 
                 <!-- Card -->
                 <div v-for="training in trainings.store.trainings" :key="training.id" class="card">
-                    <img :src="imgUrl(training.img)" :alt="training.title">
+                    <img :src="trainings.store.methods.imgUrl(training.img)" :alt="training.title">
                     <div class="content">
                         <h4> {{ training.title }}</h4>
                     </div>
