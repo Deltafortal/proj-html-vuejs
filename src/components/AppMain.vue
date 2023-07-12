@@ -4,13 +4,14 @@
 
 // Import
 import MainIntro from '../components/MainIntro.vue'
+import MainTrainings from '../components/MainTrainings.vue'
 
 
 
 //logic
 export default {
     components: {
-        MainIntro
+        MainIntro , MainTrainings
     }
 }
 

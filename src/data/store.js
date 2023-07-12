@@ -41,7 +41,7 @@ export const store = reactive({
                         service: 'Phone',
                         description: 'Phone Mountaineer bike training',
                         get: true,
-                    }
+                    },
                     {
                         service: 'Bike service',
                         description: 'Remote excelent bike service',
@@ -75,7 +75,7 @@ export const store = reactive({
                         service: 'Phone',
                         description: 'Phone Mountaineer bike training',
                         get: true,
-                    }
+                    },
                     {
                         service: 'Bike service',
                         description: 'Remote excelent bike service',
@@ -109,7 +109,7 @@ export const store = reactive({
                         service: 'Phone',
                         description: 'Phone Mountaineer bike training',
                         get: true,
-                    }
+                    },
                     {
                         service: 'Bike service',
                         description: 'Remote excelent bike service',
