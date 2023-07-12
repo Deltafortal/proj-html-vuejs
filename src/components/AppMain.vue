@@ -8,13 +8,14 @@ import MainTrainings from '../components/MainTrainings.vue'
 import MainEvents from '../components/MainEvents.vue'
 import MainTrainers from '../components/MainTrainers.vue'
 import MainPacks from '../components/MainPacks.vue'
+import MainNews from '../components/MainNews.vue'
 
 
 
 //logic
 export default {
     components: {
-        MainIntro , MainTrainings , MainEvents , MainTrainers , MainPacks
+        MainIntro , MainTrainings , MainEvents , MainTrainers , MainPacks , MainNews
     }
 }
 
@@ -59,7 +60,7 @@ export default {
 
 
         <!-- News -->
-        <News />
+        <MainNews />
 
 
     </main>
