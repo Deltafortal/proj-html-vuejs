@@ -5,13 +5,14 @@
 // Import
 import MainIntro from '../components/MainIntro.vue'
 import MainTrainings from '../components/MainTrainings.vue'
+import MainEvents from '../components/MainEvents.vue'
 
 
 
 //logic
 export default {
     components: {
-        MainIntro , MainTrainings
+        MainIntro , MainTrainings , MainEvents
     }
 }
 
