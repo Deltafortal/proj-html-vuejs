@@ -82,6 +82,7 @@ export default {
 section {
     padding-top: 40px;
     background-color: $primary-alt-col;
+    padding-bottom: 80px;
 }
 
 .wrapper {

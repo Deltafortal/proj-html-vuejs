@@ -5,6 +5,7 @@
 
 // Import
 import  { store } from '../data/store';
+import SubscribeForm from './SubscribeForm.vue'
 
 
 // logic
@@ -16,6 +17,9 @@ export default {
             
         }
     },
+    components: {
+        SubscribeForm
+    }
 }
 
 </script>
@@ -88,7 +92,7 @@ export default {
                         
                         <h3>Trainings</h3>
                         
-                        <ul> <!-- TODO Dinamic-->
+                        <ul>
                             <li v-for="training in club.store.trainings" >
                                 <a href="#"> {{ training.title }}</a>
                             </li>
@@ -101,7 +105,6 @@ export default {
                     
                     <!-- Quick Links -->
                     <div class="links-col">
-                        
                         
                         <h3>Quick Links</h3>
                         
@@ -156,7 +159,7 @@ footer {
 
 .wrapper {
     @include flexbox (space-between , flex-start);
-    padding-top: 20px;
+    padding-top: 40px;
     margin-bottom: 30px;
 }
 
@@ -204,9 +207,6 @@ img {
     width: calc(100% / 3)
 }
 
-.training-column {
-    margin-right: 100px;
-}
 
 
 h3 {
@@ -221,6 +221,7 @@ a {
 li {
     margin-bottom: 20px;
 }
+
 
 
 // Copyright
