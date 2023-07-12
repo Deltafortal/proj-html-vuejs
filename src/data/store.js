@@ -186,6 +186,7 @@ export const store = reactive({
                 },
                 location: 'Toronto',
                 tags: ['Bycicle Race'],
+                img: 'event1',
                 id: 12,
 
             },
@@ -209,6 +210,7 @@ export const store = reactive({
                 },
                 location: 'Instanbul',
                 tags: ['Bike Sport'],
+                img: 'event2',
                 id: 13,
 
             },
@@ -232,6 +234,7 @@ export const store = reactive({
                 },
                 location: 'Paris',
                 tags: ['Cycling Tour'],
+                img: 'event3',
                 id: 14,
 
             },
@@ -255,6 +258,7 @@ export const store = reactive({
                 },
                 location: 'New Jersey',
                 tags: ['Bicycle Race'],
+                img: 'event4',
                 id: 15,
 
             },
@@ -278,6 +282,7 @@ export const store = reactive({
                 },
                 location: 'London',
                 tags: ['Bike Sport'],
+                img: 'event5',
                 id: 16,
 
             },
@@ -301,6 +306,7 @@ export const store = reactive({
                 },
                 location: 'Kiev',
                 tags: ['Bicycle Race'],
+                img: 'event6',
                 id: 17,
 
             },
@@ -324,6 +330,7 @@ export const store = reactive({
                 },
                 location: 'Colorado',
                 tags: ['Bike Sport'],
+                img: 'event7',
                 id: 18,
 
             },
@@ -347,6 +354,7 @@ export const store = reactive({
                 },
                 location: 'Amsterdam',
                 tags: ['Bicycle Race'],
+                img: 'event8',
                 id: 19,
 
             },
@@ -370,6 +378,7 @@ export const store = reactive({
                 },
                 location: 'Toronto',
                 tags: ['Bicycle Race'],
+                img: 'event9',
                 id: 20,
 
             },
@@ -393,6 +402,7 @@ export const store = reactive({
                 },
                 location: 'Paris',
                 tags: ['Bicycle Race'],
+                img: 'event10',
                 id: 21,
 
             },
@@ -460,8 +470,8 @@ export const store = reactive({
         },
 
         methods: {
-            imgUrl(trainer) {
-                const url = new URL (`../assets/img/${trainer}.jpg`, import.meta.url);
+            imgUrl(element) {
+                const url = new URL (`../assets/img/${element}.jpg`, import.meta.url);
                 return url.href
             }
         }

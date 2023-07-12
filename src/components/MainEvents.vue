@@ -66,7 +66,7 @@ export default {
                         <div class="mon">{{ event.label.month }}</div>
                     </div>
 
-                    <img src="../assets/img/event1.jpg" :alt=" event.title">
+                    <img :src="events.store.methods.imgUrl(event.img)" :alt=" event.title">
 
                     <!-- Content -->
                     <div class="content">
