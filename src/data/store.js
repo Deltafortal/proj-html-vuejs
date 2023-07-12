@@ -402,21 +402,25 @@ export const store = reactive({
             {
                 name: 'Michael Lee',
                 role: 'Biker',
+                img: 'biker1' ,
                 id: 22,
             },
             {
                 name: 'Robert Lee',
                 role: 'Biker',
+                img: 'biker2',
                 id: 23,
             },
             {
                 name: 'John Doe',
                 role: 'Biker',
+                img: 'biker3',
                 id: 24,
             },
             {
                 name: 'Emily Brown',
                 role: 'Biker',
+                img: 'biker4',
                 id: 25,
             },
         ],
@@ -455,5 +459,11 @@ export const store = reactive({
             id: 30,
         },
 
+        methods: {
+            imgUrl(trainer) {
+                const url = new URL (`../assets/img/${trainer}.jpg`, import.meta.url);
+                return url.href
+            }
+        }
 
 })
