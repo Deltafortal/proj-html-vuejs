@@ -139,22 +139,27 @@ export const store = reactive({
         trainings: [
             {
                 title: 'Riding Lesson',
+                img: 'training-box-1',
                 id: 10,
             },
             {
                 title: 'Safe Driving',
+                img: 'training-box-2',
                 id: 11,
             },
             {
                 title: 'Mountain Bike',
+                img: 'training-box-3',
                 id: 12,
             },
             {
                 title: 'Trail Drive',
+                img: 'training-box-4',
                 id: 13,
             },
             {
                 title: 'Pedaling',
+                img: 'training-box-5',
                 id: 11,
             },
 

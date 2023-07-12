@@ -2,7 +2,23 @@
 
 <script>
 
+//Import
+import  { store } from '../data/store';
 
+export default {
+    data() {
+        return {
+            trainings: { store, }
+
+        }
+    },
+    methods: {
+        imgUrl(training) {
+            const url = new URL (`../assets/img/${training}.jpg`, import.meta.url);
+            return url.href
+        }
+    }
+}
 
 </script>
 
@@ -32,38 +48,12 @@
             <div class="wrapper">
 
                 <!-- Card -->
-                <div class="card">
-                    <img src="../assets/img/training-box-1.jpg" alt="training">
+                <div v-for="training in trainings.store.trainings" :key="training.id" class="card">
+                    <img :src="imgUrl(training.img)" :alt="training.title">
                     <div class="content">
-                        <h4>Riding lesson</h4>
+                        <h4> {{ training.title }}</h4>
                     </div>
-                </div>
-
-                <!-- Card -->
-                <div class="card">
-                    <img src="../assets/img/training-box-1.jpg" alt="training">
-                    <div class="content">
-                        <h4>Riding lesson</h4>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="card">
-                    <img src="../assets/img/training-box-1.jpg" alt="training">
-                    <div class="content">
-                        <h4>Riding lesson</h4>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="card">
-                    <img src="../assets/img/training-box-1.jpg" alt="training">
-                    <div class="content">
-                        <h4>Riding lesson</h4>
-                    </div>
-                </div>
-
-                
+                </div>        
 
             </div>
 
