@@ -8,8 +8,22 @@ import  { store } from '../data/store';
 export default {
     data() {
         return {
-           
+            events: { store },
+            from: '',
+            to: ''
+        }
+    },
+    methods: {
+        getFromDate(event) {
+            const { from } = event;
+            this.from = `${from.year}-${from.month}-${from.day}  ${from.hours}`
+            return this.from;
+        },
 
+        getToDate(event) {
+            const { to } = event;
+            this.to = `${to.year}-${to.month}-${to.day}  ${to.hours}`
+            return this.to;
         }
     }
    
@@ -45,100 +59,31 @@ export default {
             <div class="wrapper">
 
                 <!-- Card -->
-                <div class="card">
+                <div v-for="event in events.store.events" :key="event.id" class="card">
 
                     <div class="label">
-                        <div class="day">22</div>
-                        <div class="mon">JUN</div>
+                        <div class="day">{{ event.label.day }}</div>
+                        <div class="mon">{{ event.label.month }}</div>
                     </div>
 
-                    <img src="../assets/img/event1.jpg" alt="Event">
+                    <img src="../assets/img/event1.jpg" :alt=" event.title">
 
                     <!-- Content -->
                     <div class="content">
 
-                        <h4>Toronto</h4>
+                        <h4> {{ event.title }}</h4>
                         <div class="date">
-                            <span>ora</span>
-                            <span>ora</span>
+                            <span> {{ getFromDate(event) }}</span>
+                            <span> {{ getToDate(event) }}</span>
                         </div>
-                        <div>location</div>
-                        <div class="tag"></div>
+                        <div> {{ event.location }} </div>
+                        <div v-for="tag in event.tags" :key="tag" class="tag"> 
+                            <span>{{ tag }}</span>
+                        </div>
                     </div>
 
                 </div>
 
-                <!-- Card -->
-                <div class="card">
-
-                    <div class="label">
-                        <div class="day">22</div>
-                        <div class="mon">JUN</div>
-                    </div>
-
-                    <img src="../assets/img/event1.jpg" alt="Event">
-
-                    <!-- Content -->
-                    <div class="content">
-
-                        <h4>Toronto</h4>
-                        <div class="date">
-                            <span>ora</span>
-                            <span>ora</span>
-                        </div>
-                        <div>location</div>
-                        <div class="tag"></div>
-                    </div>
-
-                </div>
-
-                <!-- Card -->
-                <div class="card">
-
-                    <div class="label">
-                        <div class="day">22</div>
-                        <div class="mon">JUN</div>
-                    </div>
-
-                    <img src="../assets/img/event1.jpg" alt="Event">
-
-                    <!-- Content -->
-                    <div class="content">
-
-                        <h4>Toronto</h4>
-                        <div class="date">
-                            <span>ora</span>
-                            <span>ora</span>
-                        </div>
-                        <div>location</div>
-                        <div class="tag"></div>
-                    </div>
-
-                </div>
-
-                <!-- Card -->
-                <div class="card">
-
-                    <div class="label">
-                        <div class="day">22</div>
-                        <div class="mon">JUN</div>
-                    </div>
-
-                    <img src="../assets/img/event1.jpg" alt="Event">
-
-                    <!-- Content -->
-                    <div class="content">
-
-                        <h4>Toronto</h4>
-                        <div class="date">
-                            <span>ora</span>
-                            <span>ora</span>
-                        </div>
-                        <div>location</div>
-                        <div class="tag">tag</div>
-                    </div>
-
-                </div>
                 
             </div>
             
@@ -229,7 +174,9 @@ h4 {
     margin-bottom: 10px;
 }
 .date {
-    margin-bottom: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(117, 117, 117);
 
     span {
         margin-right: 10px;
@@ -238,6 +185,12 @@ h4 {
 
 .tag {
     margin-top: 15px;
+    
+    span {
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgb(218, 218, 218);
+    }
 }
 
 </style>
