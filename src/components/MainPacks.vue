@@ -109,6 +109,7 @@ section {
     text-align: center;
     margin: 20px;
     background-image: linear-gradient(170deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 48%, rgba(255,255,255,1) 49%);
+    box-shadow: 0px 0px 14px 1px #00000091;
 }
 
 h4 {

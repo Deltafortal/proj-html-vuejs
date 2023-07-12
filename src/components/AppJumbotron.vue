@@ -27,7 +27,7 @@
 
         <!-- Content -->
         <div class="content">
-            <h2>Dinamic Title</h2>
+            <h2>Learn Mountain Bike From The Expert</h2>
             <h4>Learn cycling from the pros</h4>
 
             <div class="button">
