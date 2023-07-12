@@ -45,51 +45,12 @@ export default {
             <div class="wrapper">
 
                 <!-- Card -->
-                <div class="card">
-                    <img src="../assets/img/biker1.jpg" alt="">
+                <div v-for="trainer in trainers.store.trainers" :key="trainer.id" class="card">
+                    <img :src="trainers.store.methods.imgUrl(trainer.img)" :alt="trainer.name">
 
                     <div class="content">
-                        <h4>Michael</h4>
-                        <div class="role">Biker</div>
-                        <div class="socials">
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="card">
-                    <img src="../assets/img/biker1.jpg" alt="">
-
-                    <div class="content">
-                        <h4>Michael</h4>
-                        <div class="role">Biker</div>
-                        <div class="socials">
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="card">
-                    <img src="../assets/img/biker1.jpg" alt="">
-
-                    <div class="content">
-                        <h4>Michael</h4>
-                        <div class="role">Biker</div>
-                        <div class="socials">
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="card">
-                    <img src="../assets/img/biker1.jpg" alt="">
-
-                    <div class="content">
-                        <h4>Michael</h4>
-                        <div class="role">Biker</div>
+                        <h4> {{ trainer.name }}</h4>
+                        <div class="role"> {{ trainer.role }}</div>
                         <div class="socials">
                             <font-awesome-icon class="social" :icon="['fab', 'facebook-f']" />
                             <font-awesome-icon class="social" :icon="['fab', 'instagram']" />
