@@ -97,6 +97,7 @@ section {
     padding: 30px;
     border-radius: 10px;
     background-color: $secondary-col;
+    box-shadow: 0px 0px 14px 1px #00000091;
 }
 
 h4 {

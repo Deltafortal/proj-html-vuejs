@@ -86,6 +86,7 @@ export default {
 .card {
     position: relative;
     margin-left: 20px;
+    
 }
 
 img {
