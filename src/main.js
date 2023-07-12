@@ -19,9 +19,12 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faMedal } from '@fortawesome/free-solid-svg-icons';
+import { faHelmetSafety } from '@fortawesome/free-solid-svg-icons';
+import { faBiking } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faCopyright , faArrowRight , faBarsStaggered, faChevronRight, faChevronLeft , faFacebookF , 
-    faInstagram , faTwitter)
+    faInstagram , faTwitter , faMedal, faHelmetSafety, faBiking)
 
 
 createApp(App)
