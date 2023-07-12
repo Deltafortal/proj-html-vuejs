@@ -7,13 +7,14 @@ import MainIntro from '../components/MainIntro.vue'
 import MainTrainings from '../components/MainTrainings.vue'
 import MainEvents from '../components/MainEvents.vue'
 import MainTrainers from '../components/MainTrainers.vue'
+import MainPacks from '../components/MainPacks.vue'
 
 
 
 //logic
 export default {
     components: {
-        MainIntro , MainTrainings , MainEvents , MainTrainers
+        MainIntro , MainTrainings , MainEvents , MainTrainers , MainPacks
     }
 }
 

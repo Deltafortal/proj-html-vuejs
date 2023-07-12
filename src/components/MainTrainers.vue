@@ -83,13 +83,13 @@ export default {
 @use '../assets/scss/mixin' as *;
 
 section {
-    margin-top: 40px;
-    background-color: $primary-alt-col;
+    padding-top: 40px;
+    background-color: $secondary-alt-col;
 }
 
 .wrapper {
     @include flexbox(center, center);
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .container {

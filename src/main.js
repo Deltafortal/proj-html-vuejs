@@ -20,11 +20,14 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faMedal } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { faHelmetSafety } from '@fortawesome/free-solid-svg-icons';
 import { faBiking } from '@fortawesome/free-solid-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faCopyright , faArrowRight , faBarsStaggered, faChevronRight, faChevronLeft , faFacebookF , 
-    faInstagram , faTwitter , faMedal, faHelmetSafety, faBiking)
+    faInstagram , faTwitter , faMedal, faHelmetSafety, faBiking, faHandshake, faCheck, faXmark)
 
 
 createApp(App)
