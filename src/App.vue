@@ -16,6 +16,30 @@ import AppFooter from './components/AppFooter.vue'
 export default {
     components: {
         AppHeader , AppJumbotron , AppMain, AppFooter
+    },
+    methods : {
+        onCursorMove(e) {
+
+            const cursor = document.querySelector('.cursor');
+
+            const mouseY = e.clientY;
+            const mouseX = e.clientX
+
+
+
+            cursor.style.transform = `translate3d(${mouseX - 20}px, ${mouseY -20}px, 0)`;
+
+        }
+    },
+    created:
+        function() {
+            window.addEventListener('mousemove', this.onCursorMove);
+        },
+    
+    destroyed: {
+        function() {
+            window.removeEventListener('mousemove', this.onCursorMove);
+        }
     }
 }
 
@@ -31,6 +55,11 @@ export default {
 <!------------ Template ------------->
 
 <template>
+
+    <!-- Cursor -->
+    <div class="cursor">
+
+    </div>
   
     <!-- Header -->
     <AppHeader />
