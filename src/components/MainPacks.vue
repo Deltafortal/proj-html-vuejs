@@ -110,7 +110,7 @@ section {
     margin: 20px;
     background-image: linear-gradient(170deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 48%, rgba(255,255,255,1) 49%);
     
-}
+}   
 
 h4 {
     font-size: 24px;

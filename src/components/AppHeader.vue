@@ -35,7 +35,8 @@ export default {
             
             <!----- Icon ----->
             <div class="icon">
-                <img src="../assets/img/logo-gobike.png" alt="logo">
+                <a href=""><img src="../assets/img/logo-gobike.png" alt="logo"></a>
+                
             </div>
             
             
@@ -136,9 +137,25 @@ li {
     margin-right: 27px;
 }
 
+li::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    display: block;
+    background-color: $primary-col;
+    transition: 0.2s;
+    
+}
+
+li:hover::after {
+        width: 100%;
+    }
+
+
 .hamburgher {
     font-size: 25px;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 

@@ -39,6 +39,17 @@ h3 {
 }
 
 
+// Scrollbar
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-col;
+}
+
+
   /* Utils */
 
   .container {
@@ -71,4 +82,10 @@ h3 {
 
 .card {
   box-shadow: 0px 0px 14px 1px #00000091;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.2s;
+    box-shadow: 0px 0px 14px 10px #00000091;
+}
 }
